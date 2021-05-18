@@ -1,0 +1,92 @@
+:root {
+    --primary--: #139745;
+    --danger--: rgb(207, 55, 55);
+    --attention--: rgb(158, 135, 4);
+    --gray--: #eee
+}
+
+body {
+    background: var(--gray--);
+}
+
+.main {
+    background: var(--gray--);
+    padding: 30px;
+    margin: 50px auto;
+    max-width: 600px;
+    border-radius: 5px;
+    box-shadow: -8px -8px 8px 0 rgba(255,255,255,.6),
+	8px 8px 8px 0 rgba(0,0,0,0.3);
+}
+
+
+
+.main h1 {
+    font-size: 1.6rem;
+    text-align: center;
+    color: var(--primary--);
+}
+
+
+.tarefas {
+    margin-top: 30px;
+}
+
+.tarefas li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    transition: all .3s;
+    transform: scale(1);
+}
+
+.tarefas li:hover {
+    transform: scale(1.02);
+}
+
+.tarefas li div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1.5rem;
+    text-align: center;
+    background: var(--primary--);
+    color: #fff;
+    margin-left: 10px;
+    transform: scale(1);
+    transition: all .3s;
+}
+
+.button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.plus {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1.6rem;
+    text-align: center;
+    background: var(--primary--);
+    color: #fff;
+    margin: 5px 0 5px 5px;
+    transform: scale(1);
+    transition: all .3s;
+}
+
+.plus:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.close {
+    background: var(--danger--);
+}

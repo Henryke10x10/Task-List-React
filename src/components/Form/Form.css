@@ -1,0 +1,41 @@
+:root {
+    --primary--: #139745;
+    --danger--: rgb(207, 55, 55);
+    --attention--: rgb(158, 135, 4);
+    --gray--: #eee
+}
+
+.form {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form input[type='text'] {
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #c5c5c5;
+    min-width: 50%;
+    margin: 5px;
+    background: var(--gray--);
+    transform: scaleX(.95);
+    transition: all .3s;
+}
+
+.form input[type='text']:focus {
+    transform: scaleX(1);
+    border-bottom: 1px solid var(--primary--);
+}
+
+.form input[type='text']::placeholder {
+    opacity: .8;
+} 
+
+.form button {
+    display: flex;
+    justify-content: center;
+    border: none;
+    outline: none;
+    background: transparent;
+}
